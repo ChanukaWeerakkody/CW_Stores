@@ -24,7 +24,7 @@ public class CustomerManage extends HttpServlet {
     DataSource pool;
     private List<CustomerDTO> customers = new ArrayList<>();
 
-    /*@Override
+    @Override
     public void init() {
         try {
             InitialContext initialContext = new InitialContext();
@@ -33,7 +33,7 @@ public class CustomerManage extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }*/
+    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

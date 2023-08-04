@@ -25,7 +25,7 @@ public class ItemManage extends HttpServlet {
     DataSource pool;
     private List<ItemDTO> items = new ArrayList<>();
 
-    @Override
+/*    @Override
     public void init() {
         try {
             InitialContext initialContext = new InitialContext();
@@ -34,7 +34,7 @@ public class ItemManage extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
+    }*/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Jsonb jsonb = JsonbBuilder.create();
